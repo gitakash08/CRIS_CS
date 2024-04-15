@@ -1,0 +1,19 @@
+{
+  "name": "cris-c-s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix ./client",
+    "server": "npm start --prefix  ./server",
+    "start": "npm-run-all --parallel server client",
+    "build": "cd client & ng build",
+    "deploy": "npm run build && xcopy /s /e /y .\\client\\dist\\cris\\* .\\server\\public\\"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,313 @@
+@import "https://js.arcgis.com/4.28/@arcgis/core/assets/esri/themes/light/main.css";
+
+.viewDiv {
+  flex: 1 0 30%;
+  --esri-view-outline-color: none;
+  --esri-view-outline: none;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 0.5%;
+}
+
+.screen {
+  flex: 1 0 48%;
+}
+
+#button_ {
+  margin-top: 10px;
+}
+
+::ng-deep .esri-view-user-storage {
+  position: absolute;
+}
+
+.SearchQueryButton {
+  margin-right: 12px;
+  z-index: 1;
+  background-color: #FFD662;
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.HomeButton {
+  margin-right: 12px;
+  z-index: 1;
+  background-color: rgb(0, 83, 156);
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.AnalyticsButton {
+  margin-right: 12px;
+  z-index: 1;
+  background-color: #FFD662;
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.ToolButton {
+  margin-right: 12px;
+  z-index: 1;
+  background-color: rgb(0, 83, 156);
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.SearchButton {
+  margin-right: 12px;
+  z-index: 1;
+  background-color: #FFD662;
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.legendButton {
+  margin-right: 12px;
+  z-index: 1;
+  background-color: rgb(0, 83, 156);
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.LayerGroupButton {
+  margin-right: 12px;
+  z-index: 1;
+  background-color: #FFD662;
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+#wrapper {
+  display: flex;
+}
+
+#sidePanel {
+  width: 18%;
+  height: 88vh;
+  background-color: #f7f7f7;
+  //color: white;
+  overflow: hidden;
+  transition: width 0.3s;
+  border-right: 2px solid rgb(99, 96, 96);
+}
+
+.dropdownClasses {
+  display: flex;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.toggled #sidePanel {
+  width: 0;
+}
+
+
+.Railwayfilters {
+  margin-left: 5px;
+  margin-right: 10px;
+  min-width: 10px;
+  width: 205px;
+
+  ::ng-deep .ng-select .ng-clear-wrapper {
+    display: none;
+  }
+
+  ::ng-deep .ng-select.ng-invalid.ng-touched .ng-select-container {
+    border-color: #dc3545;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px #fde6e8;
+  }
+
+  ::ng-deep .ng-select.ng-select-multiple .ng-select-container .ng-value-container {
+    flex-wrap: nowrap;
+  }
+
+  ::ng-deep .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon {
+    display: none;
+  }
+
+  ::ng-deep .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-label {
+    padding: 0px;
+  }
+
+  ::ng-deep .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    padding: 5px 10px;
+    white-space: pre-wrap;
+    font-size: var(--font-12);
+    font-family: var(--figtree-font);
+    font-weight: 400;
+  }
+
+  ::ng-deep .ng-dropdown-panel .ng-dropdown-panel-items {
+    display: block;
+    height: auto;
+    box-sizing: border-box;
+    // max-height: 240px;
+    overflow-y: auto;
+  }
+
+  ::ng-deep .ng-dropdown-panel ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::ng-deep .ng-dropdown-panel ::-webkit-scrollbar-thumb {
+    background-color: #ebeefb;
+    border-radius: 2px;
+  }
+
+  ::ng-deep .ng-dropdown-panel ::-moz-scrollbar {
+    width: 5px;
+  }
+
+  ::ng-deep .ng-dropdown-panel ::-moz-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 2px;
+  }
+
+  ::ng-deep .ng-select .ng-select-container .ng-value-container .ng-placeholder {
+    color: #00539c;
+    font-weight: 500;
+  }
+
+  ::ng-deep .ng-select .ng-select-container {
+    border: 1px solid #0079c1;
+    box-shadow: 0px 0px 3px;
+  }
+
+  ::ng-deep.ng-dropdown-panel.ng-select-bottom {
+    border-top-color: #3f51b5;
+  }
+
+  ::ng-deep .ng-dropdown-panel {
+    border: 1px solid #3f51b5;
+  }
+
+  ::ng-deep .ng-select .ng-arrow-wrapper .ng-arrow {
+    border-color: #3f51b5 transparent transparent;
+
+  }
+
+  ::ng-deep .ng-select.ng-select-opened>.ng-select-container .ng-arrow {
+
+    border-color: transparent transparent #3f51b5;
+  }
+
+  ::ng-deep .ng-value-container {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+  }
+}
+
+::ng-deep .esri-ui-bottom-right{
+  bottom:30px;
+}
+
+
+.expandButton {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  z-index: 999;
+  top: 47%;
+  border: 3px solid rgb(255, 253, 253);
+  background: white;
+  padding: 5px;
+  border-radius: 0px 6px 6px 0px;
+  height: 7vh;
+  box-shadow: 1px 0px 6px;
+}
+
+.collapseButton {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  z-index: 999;
+  top: 47%;
+  border: 3px solid rgb(255, 253, 253);
+  background: white;
+  padding: 5px;
+  border-radius: 0px 6px 6px 0px;
+  height: 7vh;
+  box-shadow: 1px 0px 6px;
+}
+
+#newTabBar {
+  display: flex;
+  z-index: 999;
+  max-width: 470px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffffffb8;
+  border-radius: 8px;
+  align-content: space-evenly;
+  bottom: 10px;
+  min-height: 50px;
+  padding: 0px 20px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+#topMenubarid {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+}
+
